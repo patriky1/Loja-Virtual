@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+
+        }
+
+        header {
+            background-color: #e627a6;
+            padding: 5px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        #banner {
+            text-align: center;
+            padding: 50px 0;
+            color: #e627a6;
+            border-radius: 100%;
+
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d8348e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn1 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d8348e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 45%;
+        }
+
+        .btn:hover {
+            background-color: #fac6f3;
+        }
+
+        #banner h1 {
+            font-size: 2.5em;
+            
+        }
+
+        #banner p {
+            font-size: 1.1em;
+        }
+
+        .recurso {
+            color: #000;
+            margin-bottom: 40px;
+            justify-content: space-between;
+        }
+
+        .recurso h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        #recursos {
+            padding: 50px 0;
+            background-color: #fcfbfb;
+            text-align: center;
+        }
+
+        .recurso p {
+            font-size: 1.1em;
+        }
+
+        #sobre {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #e627a6;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #logotipo.png {
+            border-radius: 100%;
+
+
+        }
+
+        .btnlinha {
+            position: relative;
+            justify-content: space-around;
+            display: inline;
+        }
+
+        .imagemLogo {
+            
+            border-radius: 20%;
+            animation: animeImage 2s infinite linear;
+        }
+
+        @keyframes animeImage {
+            0% {
+                transform: scale(0.9);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0.9);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="short.html">SHORT</a></li>
+                <li><a href="blusas.html">BLUSAS</a></li>
+                <li><a href="calças.html">CALÇA</a></li>
+                <li><a href="conjuntos.html">CONJUNTO</a></li>
+                <li><a href="top.html">TOP</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<section id="banner">
+    <img class="imagemLogo" src="logotipo.png" alt="banner Principal">
+    <h1> SEJAM BEM VINDAS A MODA FITNESS!</h1>
+    <p>PEÇAS ESPORTIVAS</p>
+    <button id="scrollButton" class="btn">CONFERIR PRODUTOS</button>
+    <script>
+        document.getElementById("scrollButton").onclick = function () {
+            window.scrollBy({
+                top: 1000,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+</section>
+<section id="recursos">
+
+    <div class="recurso">
+        <h3> </h3>
+        <p>
+        </p>
+        <div class="recurso" id="recurso">
+            <h1>
+                <h1>
+
+                    <p> NAVEGUE EM NOSSA LOJA VIRTUAL
+                    </p>
+                    <div class="recurso">
+                        <nav>
+                            <ul>
+                                <li><a class="btn" href="short.html">SHORT</a></li>
+                                <li><a class="btn" href="blusas.html">BLUSAS</a></li>
+                                <li><a class="btn" href="calças.html">CALÇA</a></li>
+                                <li><a class="btn" href="conjuntos.html">CONJUNTO</a></li>
+                                <li><a class="btn" href="top.html">TOP</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+        </div>
+</section>
+
+<a href="./fac/fac.html" class="btn1">FALE CONOSCO</a>
+<section id="sobre">
+    <h2>FORMAS DE PAGAMENTOS</h2>
+    <p>
+        PIX, CARTÃO DE CRÉDITO/DÉBITO E DINHEIRO
+    </p>
+</section>
+<footer>
+    <p>&copy; 2024 MODA FITNESS. Todos os Direitos reservados.</p>
+</footer>
+
+</html>
+
+<head></head>

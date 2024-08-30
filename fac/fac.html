@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento ao Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="../home.html" class="back-button">&larr;</a>
+    <header>
+        <h1>Atendimento ao Cliente</h1>
+        <p>Estamos aqui para ajudar! Envie suas dúvidas ou confira as perguntas frequentes abaixo.</p>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Entre em Contato Conosco</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu Email" required>
+                <textarea id="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-response" style="display: none;"></p>
+        </section>
+
+        <section class="faq">
+            <h2>Perguntas Frequentes (FAQ)</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">Como posso rastrear meu pedido?</h3>
+                <p class="faq-answer">Você pode rastrear seu pedido usando o código de rastreamento enviado por email após a confirmação do envio.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Quais são as opções de pagamento?</h3>
+                <p class="faq-answer">Aceitamos cartões de crédito, débito, e pagamento via boleto bancário.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Como faço para devolver um produto?</h3>
+                <p class="faq-answer">Para devolver um produto, entre em contato conosco pelo formulário acima e seguiremos com as instruções.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

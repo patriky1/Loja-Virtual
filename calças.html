@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        .cards {
+            justify-content: space-between;
+            display: flex;
+            margin: 1%;
+        }
+        .titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            border: 1px solid #e627a6;
+            border-radius: 5%;
+            padding: 1%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        color: #fff;
+        background-color: #e627a6;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .back-button:hover {
+        background-color: #b81f82;
+      }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <h1>CALÇAS</h1>
+    </div>
+    <a href="home.html" class="back-button">&larr;</a>
+    <div class="cards">
+
+      <div class="card">
+         <img src="calça.008.webp">
+         <h3>calça academia</h3>
+         <p>R$ 130,00</p>
+      </div>
+
+      <div class="card">
+         <img src="calça.webp">
+         <h3>calça academia</h3>
+         <p>R$ 100,00</p>
+      </div>
+
+      <div class="card">
+         <img src="calça.webp">
+         <h3>calça academia</h3>
+         <p>R$ 50,00</p>
+      </div>
+
+      <div class="card">
+         <img src="cal10.avif">
+         <h3>calça academia</h3>
+         <p>R$ 50,00</p>
+      </div>
+
+    </div>  
+    <div class="cards 2">
+      <div class="card">
+         <img src="cal12.webp">
+         <h3>calça academia</h3>
+         <p>R$ 90,00</p>
+      </div>
+    
+      <div class="card">
+         <img src="cal14.webp">
+         <h3>calça academia</h3>
+         <p>R$ 80,00</p>
+      </div>
+
+      <div class="card">
+         <img src="cal15.webp">
+         <h3>calça academia</h3>
+         <p>R$ 70,00</p>
+      </div>
+
+      <div class="card">
+         <img src="call18.webp">
+         <h3>calça academia</h3>
+         <p>R$ 90,00</p>
+      </div>
+    </div>
+    
+</body>
+</html>
