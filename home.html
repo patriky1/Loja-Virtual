@@ -74,7 +74,7 @@
 
         #banner h1 {
             font-size: 2.5em;
-            
+
         }
 
         #banner p {
@@ -127,7 +127,7 @@
         }
 
         .imagemLogo {
-            
+
             border-radius: 20%;
             animation: animeImage 2s infinite linear;
         }
@@ -146,11 +146,130 @@
             }
 
         }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #banner h1 {
+                font-size: 1.5em;
+            }
+
+            #banner p {
+                font-size: 1em;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .btn1 {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .imagemLogo {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            #banner h1 {
+                font-size: 1.2em;
+            }
+
+            #banner p {
+                font-size: 0.9em;
+            }
+
+            .btn {
+                padding: 10px;
+            }
+
+            .btn1 {
+                width: 100%;
+            }
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #d8348e;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {}
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <header>
+    <div class="topnav" id="myTopnav">
+        <a href="short.html">SHORT</a>
+        <a href="blusas.html">BLUSAS</a>
+        <a href="calças.html">CALÇA</a>
+        <a href="conjuntos.html">CONJUNTO</a>
+        <a href="top.html">TOP</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="./menu.png" alt="...">
+        </a>
+    </div>
+    <!-- <header>
         <nav>
             <ul>
                 <li><a href="short.html">SHORT</a></li>
@@ -160,60 +279,71 @@
                 <li><a href="top.html">TOP</a></li>
             </ul>
         </nav>
-    </header>
-</body>
-<section id="banner">
-    <img class="imagemLogo" src="logotipo.png" alt="banner Principal">
-    <h1> SEJAM BEM VINDAS A MODA FITNESS!</h1>
-    <p>PEÇAS ESPORTIVAS</p>
-    <button id="scrollButton" class="btn">CONFERIR PRODUTOS</button>
-    <script>
-        document.getElementById("scrollButton").onclick = function () {
-            window.scrollBy({
-                top: 1000,
-                behavior: 'smooth'
-            });
-        };
-    </script>
-</section>
-<section id="recursos">
+    </header> -->
 
-    <div class="recurso">
-        <h3> </h3>
-        <p>
-        </p>
-        <div class="recurso" id="recurso">
-            <h1>
+
+
+    <section id="banner">
+        <img class="imagemLogo" src="logotipo.png" alt="banner Principal">
+        <h1> SEJAM BEM VINDAS A MODA FITNESS!</h1>
+        <p>PEÇAS ESPORTIVAS</p>
+        <button id="scrollButton" class="btn">CONFERIR PRODUTOS</button>
+        <script>
+            document.getElementById("scrollButton").onclick = function () {
+                window.scrollBy({
+                    top: 1000,
+                    behavior: 'smooth'
+                });
+            };
+        </script>
+    </section>
+    <section id="recursos">
+
+        <div class="recurso">
+            <h3> </h3>
+            <p>
+            </p>
+            <div class="recurso" id="recurso">
                 <h1>
+                    <h1>
 
-                    <p> NAVEGUE EM NOSSA LOJA VIRTUAL
-                    </p>
-                    <div class="recurso">
-                        <nav>
-                            <ul>
-                                <li><a class="btn" href="short.html">SHORT</a></li>
-                                <li><a class="btn" href="blusas.html">BLUSAS</a></li>
-                                <li><a class="btn" href="calças.html">CALÇA</a></li>
-                                <li><a class="btn" href="conjuntos.html">CONJUNTO</a></li>
-                                <li><a class="btn" href="top.html">TOP</a></li>
-                            </ul>
-                        </nav>
+                        <p> NAVEGUE EM NOSSA LOJA VIRTUAL
+                        </p>
+                        <div class="recurso">
+                            <nav>
+                                <ul>
+                                    <li><a class="btn" href="short.html">SHORT</a></li>
+                                    <li><a class="btn" href="blusas.html">BLUSAS</a></li>
+                                    <li><a class="btn" href="calças.html">CALÇA</a></li>
+                                    <li><a class="btn" href="conjuntos.html">CONJUNTO</a></li>
+                                    <li><a class="btn" href="top.html">TOP</a></li>
+                                </ul>
+                            </nav>
 
-                    </div>
-        </div>
-</section>
+                        </div>
+            </div>
+    </section>
 
-<a href="./fac/fac.html" class="btn1">FALE CONOSCO</a>
-<section id="sobre">
-    <h2>FORMAS DE PAGAMENTOS</h2>
-    <p>
-        PIX, CARTÃO DE CRÉDITO/DÉBITO E DINHEIRO
-    </p>
-</section>
-<footer>
-    <p>&copy; 2024 MODA FITNESS. Todos os Direitos reservados.</p>
-</footer>
+    <a href="./fac/fac.html" class="btn1">FALE CONOSCO</a>
+    <section id="sobre">
+        <h2>FORMAS DE PAGAMENTOS</h2>
+        <p>
+            PIX, CARTÃO DE CRÉDITO/DÉBITO E DINHEIRO
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 MODA FITNESS. Todos os Direitos reservados.</p>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
 
 </html>
-
-<head></head>
